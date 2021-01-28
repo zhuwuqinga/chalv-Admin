@@ -1,0 +1,10 @@
+{
+src/.DS_Store
+build.sh
+dist/
+node_modules/
+dist.rar
+.history/
+.DS_Store
+}
+package-lock.json

@@ -1,0 +1,69 @@
+{
+  "name": "avue-cli",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node index.js",
+    "server": "nodemon index.js --ignore client",
+    "analyz": "npm_config_report=true npm run build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "@smallwei/avue": "2.6.15",
+    "all": "0.0.0",
+    "avue-plugin-map": "^1.0.1",
+    "avue-plugin-ueditor": "0.1.6",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "classlist-polyfill": "^1.2.0",
+    "element-ui": "^2.13.0",
+    "file-saver": "^2.0.2",
+    "image-conversion": "^2.1.1",
+    "js-cookie": "^2.2.0",
+    "less-loader": "^6.1.1",
+    "mockjs": "^1.0.1-beta3",
+    "nprogress": "^0.2.0",
+    "qs": "^6.9.4",
+    "sass-resources-loader": "^2.0.3",
+    "sortablejs": "^1.10.0-rc2",
+    "v-viewer": "^1.5.1",
+    "vue": "^2.5.16",
+    "vue-axios": "^2.1.2",
+    "vue-i18n": "^8.7.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.1",
+    "vue-video-player": "^5.0.2",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.16.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-service": "^3.1.4",
+    "chai": "^4.1.2",
+    "cross-env": "^7.0.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.0.1",
+    "script-loader": "^0.7.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-bundle-analyzer": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "description": "<p align=\"center\"><a href=\"https://avuejs.com\" target=\"_blank\" rel=\"noopener noreferrer\"><img width=\"100\" src=\"https://avuejs.com/images/logo-bg.jpg\" alt=\"Avue logo\"></a></p>",
+  "main": "babel.config.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
